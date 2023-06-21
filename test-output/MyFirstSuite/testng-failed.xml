@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyFirstSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="MyRegisterTestCase(failed)">
+    <classes>
+      <class name="TestNGFramework.RegisterTestcase">
+        <methods>
+          <include name="InitBrowser"/>
+          <include name="RegisterWithValidData"/>
+          <include name="ExitBrowser"/>
+        </methods>
+      </class> <!-- TestNGFramework.RegisterTestcase -->
+    </classes>
+  </test> <!-- MyRegisterTestCase(failed) -->
+  <test thread-count="5" name="LoginTestCase(failed)">
+    <parameter name="Username" value="admin12525"/>
+    <parameter name="Password" value="password"/>
+    <classes>
+      <class name="TestNGFramework.LoginTestCase">
+        <methods>
+          <include name="InitBrowser"/>
+          <include name="LoginWithValidData" invocation-numbers="0"/>
+          <include name="ExitBrowser"/>
+        </methods>
+      </class> <!-- TestNGFramework.LoginTestCase -->
+    </classes>
+  </test> <!-- LoginTestCase(failed) -->
+</suite> <!-- Failed suite [MyFirstSuite] -->

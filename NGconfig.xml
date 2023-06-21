@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE  suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Automation with Maven  -->
+
+<suite name="eaappTestSuite">
+	<parameter name="Uname" value="admin"/>	<!-- Global Parameter -->
+
+	<test name="LoginTestCasewithFirefox">
+		<parameter name="browser" value="firefox"/>	<!-- Local Parameter -->
+		<parameter name="Upass" value="password"/>	<!-- Local Parameter -->	
+		<classes>
+			<!--<class name="packageName.className"></class> -->
+			<class name="TestNGFramework.LoginTestCase"></class>
+		</classes>
+	</test>
+	
+	<test name="LoginTestCaseWithChrome">
+		<parameter name="browser" value="chrome"/>	<!-- Local Parameter -->
+		<parameter name="Upass" value="password"/>	<!-- Local Parameter -->	
+		<classes>
+			<!--<class name="packageName.className"></class> -->
+			<class name="TestNGFramework.LoginTestCase"></class>
+		</classes>
+	</test>
+	
+	<test name="LoginTestCasewithEdge">
+		<parameter name="browser" value="edge"/>	<!-- Local Parameter -->
+		<parameter name="Upass" value="password"/>	<!-- Local Parameter -->	
+		<classes>
+			<!--<class name="packageName.className"></class> -->
+			<class name="TestNGFramework.LoginTestCase"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="RegisterTestcase">
+		<classes>
+			<!--<class name="packageName.className"></class> -->
+			<class name="TestNGFramework.RegisterTestcase"></class>
+		</classes>
+	</test>
+</suite>

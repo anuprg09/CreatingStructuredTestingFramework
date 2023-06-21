@@ -1,3 +1,3 @@
 # CreatingStructuredTestingFramework
 
-This is just to demo a Git uses
+This is just a selenium test project in Java

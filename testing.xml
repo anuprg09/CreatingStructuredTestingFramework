@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE  suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyFirstSuite">
+	<test name="MyRegisterTestCase">
+		<classes>
+			<class name="TestNGFramework.RegisterTestcase"/>
+		</classes>
+	</test>
+
+	<test name="LoginTestCase">
+	<parameter name="Username" value="admin12525"/>
+	<parameter name="Password" value="password"/>
+		<classes>
+			<class name="TestNGFramework.LoginTestCase"/>
+		</classes>
+	</test>
+
+
+</suite>
